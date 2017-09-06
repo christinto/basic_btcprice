@@ -1,0 +1,18 @@
+var restify = require('restify');
+//var http = require("http"); //calls so we can create a server
+var request = require("request");// make new variable now that we've created a request module with npm install request --save
+
+//with node.js u build the server. Will listen on default 80 port. Define params in function.//console.log(response) shoots a whole stream, target with body.market_price_usd etc..
+http.createServer(function(req, res){
+		//reqeust is a new visitor
+		request({
+			url: "https://blockchain.info/stats?format=json",
+			json: true
+		}, function(error, response, body){
+			console.log(body.market_price_usd); 
+		});
+		console.log("Hi I'm a new bitcoin user" + req.url);
+		res.end("bitcoin to the moon");
+
+
+	}).listen(8080);

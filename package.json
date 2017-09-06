@@ -1,0 +1,24 @@
+{
+  "name": "btcprice",
+  "version": "1.0.0",
+  "description": "Bitcoin price puller",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "bitcoin price api"
+  },
+  "keywords": [
+    "btc",
+    "price",
+    "api"
+  ],
+  "author": "Chris Perry",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
